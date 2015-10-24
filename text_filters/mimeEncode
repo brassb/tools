@@ -1,0 +1,14 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+use MIME::Base64;
+
+my $contents = "";
+while (<>)
+{
+  $contents .= $_;
+}
+
+print encode_base64($contents);
+

@@ -1,0 +1,3 @@
+#!/usr/bin/perl -p
+s/\+/ /g;
+s/\%([A-Fa-f0-9][A-Fa-f0-9])/pack("H*", $1)/ge;
